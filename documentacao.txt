@@ -1,0 +1,26 @@
+####################################### INFORMAÇÕES SOBRE O DESENVOLVIMENTO ##############################################
+
+Descrição: 
+			A infraestrutura do ambiente localhost foi toda configurada sobre uma máquina virtual do Linux instalada no Windows 10.
+			O Docker foi instalado diretamente na imagem do Linux e abriga todos os serviços utilizados nessa aplicação.
+			Os serviços foram criados utilizando o Docker Compose que por sua vez executa a orquestração destes.
+			Foi utilizado o framework Laravel com intuido de agiliziar o desenvolvimento baseado no padrão MVC.
+			Além disso, também foi utilizado a biblioteca "PHP Simple HTML DOM Parser" para manipulação do HTML.
+
+Versão dos serviços:
+
+			- Linux: Ubuntu 18.04.1 LTS (Bionic Beaver)
+			- Docker: 18.09.0
+			- Docker Compose: 1.23.1, build b02f1306
+			- PHP: PHP 7.2.12 (cli)
+			- MySQL: 5.7.22-log MySQL Community Server (GPL)
+			- Nginx: nginx/1.15.6
+			- PhpMyAdmin: 4.8.3 (atualizado(a))
+			- Laravel: Laravel Framework 5.7.13
+
+Execução:
+		- Requisitos: Docker / Docker Compose instalado e configurado.
+		- Código-Fonte: https://github.com/feliperangel64/app-web-crawler.git
+		- Rodar script.txt contido na raiz do projeto ou executar o comando "php artisan migrate" para criação da tabela n	
+
+

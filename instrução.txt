@@ -1,0 +1,32 @@
+Introdução
+	Esse teste é para avaliar o seu conhecimento, habilidade, criatividade usando as tecnologias que está no nosso stack.
+	É um caso de uso que não nos tem uma utilidade de fato, é exclusivamente para conhecermos suas habilidades de desenvolvedor.
+
+	Como tudo em programação se pode fazer a mesma coisa de milhares de formas diferentes, você está livre para desenvolver a melhor solução possível.
+	E o que é considerável "melhor solução"?
+		Um código simples e legível - (Manutenção é tudo)
+		Uma design/arquitetura extensível - (Sistemas sempre estão em constante evolução)
+		Utiliza um padrão organizado e coeso
+	Somos bem atentos aos detalhes, então se você, usar algum design pattern nós vamos ver e ficaremos felizes :)
+
+Tarefa
+	Desenvolver um crawler capaz de ler um site de anúncio de veículos.
+
+	 - Deve ler a seguinte página c
+	 - Deve conseguir os seguintes dados:
+	 		Marca, modelo, ano fabricação, ano modelo, preço, url do veículo, id do veículo
+	 - Os dados devem ser salvos num banco de dados
+
+Tecnologias
+	- Deve ser desenvolvido utilizando PHP >= 5.6
+	- Deve usar banco MySql
+	- Deve user o GIT como versionamento
+	- Pode ser usado packages do composer
+	- Pode usar Docker (É um diferencial excelente)
+	- Pode usar algum framework
+
+Entrega
+	- Após o recebimento desse teste, você deverá entregar a solução num prazo de até 5 dias
+	- O código deve ser entrege através de um repositório git, publico ou privado, não importa a plataforma, pode ser github, bitbucket, gitlab e etc
+	- Descrever com detalhes como executar o código
+		Qual versão do PHP, quais extensões necessárias, qual versão do MySQL e etc

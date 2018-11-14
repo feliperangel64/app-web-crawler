@@ -27,10 +27,10 @@ Execução:
 			- Pré-requisito: Docker / Docker Compose ambos instalados e configurados.
 
 			1) Baixar o código-fonte: git clone https://github.com/feliperangel64/app-web-crawler.git
-			2) Acessar a raíz do projeto e executar o composer: docker-composer up -d (saída: app / db / webserver / phpadmin)
-			3) Verificar se todos os serviços estão ativos: docker ps 
-		    4) Executar o "./script.txt" ou executar o comando "php artisan migrate" para criação da tabela	"carros"
-		    5) Acessar o endereço: "http://localhost/carros/show/" para buscar as informações, gravar no banco e exibir no browser.
+			2) Acessar a raíz do projeto e executar o composer: docker-compose up -d (ver docs/img-docker-compose-up.png)
+			3) Verificar se todos os serviços estão ativos: docker ps (ver docs/img-docker-ps.png)
+		    4) Executar o "docs/script.txt" ou o comando "php artisan migrate" para criar a table "carros" (ver docs/img-table-carros.png)
+		    5) Acessar o link: "http://localhost/carros/show/" para buscar, gravar e exibir os dados. (ver docs/img-relatorio-carros-1.png)
 
 		    Obs: Cada novo acesso realiza inserções no banco de dados.
 

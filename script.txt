@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: db
+-- Tempo de geração: 13/11/2018 às 23:47
+-- Versão do servidor: 5.7.22-log
+-- Versão do PHP: 7.2.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Banco de dados: `laravel`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `carros`
+--
+
+CREATE TABLE `carros` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `marca` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modelo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ano_fabricacao` char(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ano_modelo` char(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `preco` float(10,2) NOT NULL,
+  `cod_carro` int(11) NOT NULL,
+  `url_carro` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Índices de tabelas apagadas
+--
+
+--
+-- Índices de tabela `carros`
+--
+ALTER TABLE `carros`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas apagadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `carros`
+--
+ALTER TABLE `carros`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+COMMIT;

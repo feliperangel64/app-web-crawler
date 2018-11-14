@@ -1,10 +1,13 @@
 ####################################### INFORMAÇÕES SOBRE O DESENVOLVIMENTO ##############################################
 
+Autor: Felipe Rangel dos Santos
+Data: 13/09/2018 - 22:01
+
 Descrição: 
 			A infraestrutura do ambiente localhost foi toda configurada sobre uma máquina virtual do Linux instalada no Windows 10.
 			O Docker foi instalado diretamente na imagem do Linux e abriga todos os serviços utilizados nessa aplicação.
-			Os serviços foram criados utilizando o Docker Compose que por sua vez executa a orquestração destes.
-			Foi utilizado o framework Laravel com intuido de agiliziar o desenvolvimento baseado no padrão MVC.
+			Os serviços foram criados utilizando o Docker Compose que por sua vez executa a orquestração destes serviços.
+			Foi utilizado o framework Laravel e controlador de versão Git com intuito de agilizar o desenvolvimento no padrão MVC.
 			Além disso, também foi utilizado a biblioteca "PHP Simple HTML DOM Parser" para manipulação do HTML.
 
 Versão dos serviços:
@@ -12,15 +15,23 @@ Versão dos serviços:
 			- Linux: Ubuntu 18.04.1 LTS (Bionic Beaver)
 			- Docker: 18.09.0
 			- Docker Compose: 1.23.1, build b02f1306
+			- Laravel: Laravel Framework 5.7.13
+			- GIT: 2.17.1
 			- PHP: PHP 7.2.12 (cli)
 			- MySQL: 5.7.22-log MySQL Community Server (GPL)
 			- Nginx: nginx/1.15.6
 			- PhpMyAdmin: 4.8.3 (atualizado(a))
-			- Laravel: Laravel Framework 5.7.13
+
 
 Execução:
-		- Requisitos: Docker / Docker Compose instalado e configurado.
-		- Código-Fonte: https://github.com/feliperangel64/app-web-crawler.git
-		- Rodar script.txt contido na raiz do projeto ou executar o comando "php artisan migrate" para criação da tabela n	
+			- Pré-requisito: Docker / Docker Compose ambos instalados e configurados.
+
+			1) Baixar o código-fonte: git clone https://github.com/feliperangel64/app-web-crawler.git
+			2) Acessar a raíz do projeto e executar o composer: docker-composer up -d (saída: app / db / webserver / phpadmin)
+			3) Verificar se todos os serviços estão ativos: docker ps 
+		    4) Executar o "./script.txt" ou executar o comando "php artisan migrate" para criação da tabela	"carros"
+		    5) Acessar o endereço: "http://localhost/carros/show/" para buscar as informações, gravar no banco e exibir no browser.
+
+		    Obs: Cada novo acesso realiza inserções no banco de dados.
 
 
